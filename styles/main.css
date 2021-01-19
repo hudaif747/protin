@@ -66,13 +66,15 @@ li .selected {
 .read-more-target {
     opacity: 0;
     max-height: 0;
-    font-size: 0
+    font-size: 0;
+    transition: .2s ease-out
 }
 
 .read-more-state:checked~.read-more-wrap .read-more-target {
     opacity: 1;
     font-size: inherit;
-    max-height: 999em
+    max-height: 999em;
+    transition: .2s ease-in
 }
 
 .read-more-state~.read-more-trigger:before {
